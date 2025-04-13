@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/sonner"
 import "./globals.css";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { libre } from "@/fonts/font";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Hirehog",
@@ -21,6 +22,7 @@ export default function RootLayout({
         className={`${libre.className} bg-[#101011] antialiased`}
       >
         <Toaster position="top-right" />
+        <Navbar />
         <MaxWidthWrapper>
         {children}
         </MaxWidthWrapper>
