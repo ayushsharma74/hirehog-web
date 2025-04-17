@@ -22,8 +22,8 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-gray-100 h-screen flex items-center justify-center">
-      <Button onClick={loginWithGoogle} variant={'outline'} size={"xl"}  className="flex items-center gap-2  cursor-pointer transition-colors hover:bg-zinc-200  rounded-lg">
+    <div className="">
+      <Button onClick={loginWithGoogle} variant={'outline'} size={"xl"}  className="flex items-center gap-2  cursor-pointer transition-colors   rounded-lg">
         <FaGoogle size={23} />
         <h1>Login with Google</h1>
         

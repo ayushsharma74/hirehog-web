@@ -5,6 +5,7 @@ import "@/app/globals.css";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { libre } from "@/fonts/font";
 import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Hirehog",
@@ -21,11 +22,13 @@ export default function RootLayout({
       <body
         className={`${libre.className} bg-[#101011] antialiased`}
       >
-        {/* <Toaster position="top-right" /> */}
-        {/* <Navbar /> */}
-        {/* <MaxWidthWrapper> */}
+        <Toaster position="top-right" />
+        <Navbar />
+        <MaxWidthWrapper>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
         {children}
-        {/* </MaxWidthWrapper> */}
+        </ThemeProvider>
+        </MaxWidthWrapper>
       </body>
     </html>
   );

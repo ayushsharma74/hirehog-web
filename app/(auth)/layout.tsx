@@ -1,32 +1,24 @@
 import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/sonner"
-
 import "@/app/globals.css";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { libre } from "@/fonts/font";
-import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Hirehog",
+  title: "Hirehog | Login",
   description: "Job application tracking. Reimagined",
 };
 
-export default function RootLayout({
+export default function AuthLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
+      <div
         className={`${libre.className} bg-[#101011] antialiased`}
       >
-        {/* <Toaster position="top-right" /> */}
-        {/* <Navbar /> */}
-        {/* <MaxWidthWrapper> */}
+        <Toaster position="top-right" />
         {children}
-        {/* </MaxWidthWrapper> */}
-      </body>
-    </html>
+      </div>
   );
 }

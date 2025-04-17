@@ -1,7 +1,10 @@
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
+  
+
   return (
     <>
       
@@ -20,9 +23,11 @@ export default function Home() {
         </div>
         <Button
           size="lg"
-          className="bg-[#242429] transition-all font-semibold cursor-pointer text-sm sm:text-base px-6 py-2 sm:px-8 sm:py-3"
+          className="bg-[#242429] text-white hover:text-[#242429]  transition-all font-semibold cursor-pointer text-sm sm:text-base px-6 py-2 sm:px-8 sm:py-3"
         >
+          <Link href="/login">
           Get Started
+          </Link>
         </Button>
       </div>
     </>
