@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/api/:path*",        // match all requests to /api/*
-        destination: "http://localhost:3000/api/:path*", // proxy to backend
+        destination: "https://hirehog-backend.onrender.com/api/:path*", // proxy to backend
       },
     ];
   },
