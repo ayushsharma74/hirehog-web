@@ -12,7 +12,7 @@ export default function Home() {
     try {
       setLoading(true);
       toast.loading("Redirecting...");
-      window.location.href = "http://localhost:3000/api/auth";
+      window.location.href = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/auth`;
       
       setLoading(false);
     } catch (error) {
