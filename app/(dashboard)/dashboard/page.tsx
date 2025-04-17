@@ -15,18 +15,6 @@ import {
 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export default function Dashboard() {
-  //   _id: new ObjectId('67f96a462e49f06584520bf2'),
-  //   googleId: '115671643975684560527',
-  //   __v: 0,
-  //   accessToken: 'ya29.a0AZYkNZjqVrkAxEQfGepvQpw2fHkTMXs9R1tIeJfodgiq_Xjha5ue6hbojEDJP5OQc5Z7zYixhYZlfKl0Ze2D3f0JjBB4ro17m3sFMQLETr26UxkynbbWTGJ_Bdu3MYZZxngfUL8bBg3QmPyqyAmjNwL3DC9YJq6wksTtGJHnaCgYKAfwSARcSFQHGX2MiJbP59ipzHjmPhMwGo74Pvw0175',
-  //   createdAt: 2025-04-11T19:15:17.477Z,
-  //   email: 'ayush.sharma769287@gmail.com',
-  // -WzcMYPcl3KUFhLWg8HWsawTxakhKagwxJsF=s96-c',
-  //   jobEmails: [],
-  //   name: 'Ayush Sharma',
-  //   tokenExpiryDate: 2025-04-13T20:55:17.975Z,
-  //   up
-
   const { user, loading, fetchUser } = useAuthStore();
   const router = useRouter();
 
